@@ -1,0 +1,19 @@
+Fonts licence note
+==================
+
+The fonts/ directory will hold two serif font files shipped with this
+repository so the program can render without any system fonts installed:
+
+- LiberationSerif-Regular.ttf
+- LiberationSerif-Bold.ttf
+
+Liberation Serif is licensed under the SIL Open Font License, Version 1.1
+(see https://scripts.sil.org/OFL). The Liberation fonts are a free,
+open-source family originally developed for metric compatibility with
+Times New Roman; redistribution of the unmodified font files with this
+licence note is permitted under the OFL.
+
+The program loads these files relative to its own location (fonts/ next to
+main.py) and falls back to the drawing library's built-in default font,
+called with no arguments, if they cannot be opened for any reason, so a
+missing font file can never crash the run.
